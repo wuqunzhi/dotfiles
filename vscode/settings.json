@@ -1,0 +1,594 @@
+// C:\Users\79481\AppData\Roaming\Code\User\settings.json
+// @LastEditTime: 2023-11-01 21:19:05
+{
+	"editor.fontSize": 20,
+	"editor.mouseWheelZoom": true,
+	"editor.cursorSurroundingLines": 5,
+	"editor.lineNumbers": "relative",
+	"editor.largeFileOptimizations": false,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnPaste": false,
+	"editor.formatOnType": false,
+	// "editor.formatOnSave": true,
+	"editor.formatOnSaveMode": "file",
+	"editor.wordWrap": "off",
+	"editor.detectIndentation": true,
+	"editor.renderWhitespace": "boundary",
+	"editor.find.autoFindInSelection": "multiline",
+	// "editor.foldingStrategy": "indentation", //note!!!
+	"editor.showFoldingControls": "always",
+	"editor.accessibilitySupport": "off",
+	"notebook.showFoldingControls": "always",
+	// "editor.glyphMargin": false, //!!!
+	// suggestion
+	"editor.suggest.preview": true,
+	"editor.suggest.insertMode": "insert", // 插入建议而不覆盖光标右侧的文本
+	"editor.snippetSuggestions": "inline",
+	"editor.suggestSelection": "recentlyUsedByPrefix",
+	"editor.tabCompletion": "off",
+	"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+	"editor.inlineSuggest.enabled": true,
+	"editor.acceptSuggestionOnCommitCharacter": false,
+	"editor.suggest.matchOnWordStartOnly": false,
+	// workbench
+	"workbench.iconTheme": "vscode-great-icons",
+	"workbench.editor.pinnedTabSizing": "shrink", //compact
+	"workbench.editor.tabSizing": "shrink",
+	"workbench.editor.wrapTabs": true,
+	"workbench.editor.openPositioning": "right",
+	"workbench.editor.limit.value": 20,
+	"workbench.editorAssociations": {
+		"*.md": "default", //不用office viewer 插件的WISYWIG
+		"*.ipynb": "jupyter-notebook"
+	},
+
+	// files
+	"files.autoGuessEncoding": true,
+	"files.autoSave": "afterDelay",
+	"files.autoSaveDelay": 60000,
+	"files.simpleDialog.enable": true,
+	"files.associations": { ".vsvimrc": "vimrc" },
+	"files.watcherExclude": {
+		"**/.history/**": true
+	},
+	"files.exclude": {
+		// "**/.classpath": true,
+		// "**/.factorypath": true,
+		// "**/.project": true,
+		// "**/.settings": true
+	},
+	"search.exclude": {
+		"**/.history": true,
+		"**/*.code-search": false
+	},
+	// other
+	"explorer.confirmDragAndDrop": false,
+	"explorer.confirmDelete": false,
+	"window.commandCenter": false,
+	// "http.proxySupport": "on", //默认off,可能有用
+	// from xrz
+	// "terminal.external.linuxExec": "/usr/bin/alacritty",
+	// "terminal.integrated.cwd": "",
+	// "terminal.integrated.defaultProfile.linux": "zsh",
+	// ==================== end 1.base config ====================
+
+	// ==================== 2.languages ====================
+	// -------------------- markdown
+	"[markdown]": {
+		"editor.defaultFormatter": "yzhang.markdown-all-in-one",
+		"editor.tabSize": 2,
+		"editor.wordWrap": "off",
+		"editor.quickSuggestions": {
+			"comments": "off",
+			"strings": "off",
+			"other": "on"
+		}
+	},
+	"markdown.preview.breaks": true,
+	"markdown.preview.typographer": true,
+	"markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
+	"markdown-preview-github-styles.colorTheme": "light",
+	"markdown.extension.print.theme": "dark",
+	// -------------------- C_Cpp
+	// "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, IndentWidth: 4, ColumnLimit: 100, IndentCaseLabels: false, AccessModifierOffset: -4, AlignTrailingComments: true }",
+	// "C_Cpp.default.cStandard": "c11",
+	// "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM,ConstructorInitializerAllOnOneLineOrOnePerLine: false, IndentWidth: 4, AllowShortFunctionsOnASingleLine: true, ColumnLimit: 100, IndentCaseLabels: false, AccessModifierOffset: -4, AlignTrailingComments: true, }",
+	// -------------------- json,html,css,js
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	// prettier
+	"prettier.useTabs": true,
+	"prettier.printWidth": 100,
+	// -------------------- python
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.python",
+		"editor.formatOnType": true
+	},
+	"python.autoComplete.extraPaths": ["D:/Anaconda/Lib/site-packages", "D:/Anaconda/Lib/Scripts"],
+	"python.formatting.provider": "autopep8",
+	// "python.formatting.blackArgs": ["--skip-string-normalization", "--line-length=110"],
+	// "python.formatting.autopep8Args": ["--max-line-length=200"],
+	"python.pythonPath": "D:/Anaconda/python.exe",
+	"python.linting.pylintArgs": ["--generate-members"],
+	"python.analysis.extraPaths": ["D:/Anaconda/Lib/site-packages", "D:/Anaconda/Lib/Scripts"],
+	"python.defaultInterpreterPath": "D:\\Anaconda\\envs\\test\\python.exe",
+	// jupyte
+	"notebook.cellToolbarLocation": {
+		"default": "right",
+		"jupyter-notebook": "left"
+	},
+	// -------------------- ahk
+	"AutoHotkey2.InterpreterPath": "D:\\AutoHotKey\\v2\\AutoHotkey64.exe",
+	"AutoHotkey2.AutoLibInclude": "All",
+	"AutoHotkey2.DisableV1Script": false,
+	"AutoHotkey2.FormatOptions": { "ignore_comment": false, "one_true_brace": "1" },
+	"AutoHotkey2.CompleteFunctionParens": true,
+	"vscode-ahk-plus.executePath": "D:\\AutoHotKey\\v2\\AutoHotkey64.exe",
+	// -------------------- lua
+	"luahelper.base.showOnline": false,
+	// ==================== end 2.languages ====================
+
+	// ==================== 3.universal extensions ====================
+	// markdown-allinone
+	"markdown.extension.list.toggle.candidate-markers": ["-", "1."],
+	// code-runner
+	"code-runner.runInTerminal": true,
+	"code-runner.preserveFocus": false,
+	"code-runner.saveFileBeforeRun": true,
+	// hexeditor fromxrz
+	"hexeditor.columnWidth": 16,
+	"hexeditor.showDecodedText": true,
+	"hexeditor.defaultEndianness": "little",
+	"hexeditor.inspectorType": "aside",
+	// commentTranslate
+	"commentTranslate.hover.content": false,
+	"commentTranslate.hover.enabled": false,
+	"commentTranslate.hover.nearShow": false,
+	"commentTranslate.hover.concise": true,
+	// sync
+	"sync.gist": "1348a11ababfd9ba3711ca72c418a5ef",
+	// local-history
+	"local-history.daysLimit": 0,
+	"local-history.maxDisplay": 50,
+	"local-history.saveDelay": 600,
+	// whichkey
+	"whichkey.bindings": [
+		//shift space
+		// e o g f F w r s S
+		{
+			"key": "v",
+			"name": "toggle vim",
+			"type": "command",
+			"command": "toggleVim" //c-s-g
+		},
+		{
+			"key": "e",
+			"name": "explorer",
+			"type": "conditional",
+			"bindings": [
+				{
+					"key": "",
+					"name": "default",
+					"type": "command",
+					"command": "workbench.view.explorer" //c-s-e
+				},
+				{
+					"key": "when:sideBarVisible && explorerViewletVisible",
+					"name": "Hide explorer",
+					"type": "command",
+					"command": "workbench.action.toggleSidebarVisibility" //c-b
+				}
+			]
+		},
+		{
+			"key": "o",
+			"name": "Outline",
+			"type": "conditional",
+			"bindings": [
+				{
+					"key": "when:!view.outline.visible",
+					"name": "default",
+					"type": "command",
+					"command": "extension.multiCommand.execute",
+					"args": {
+						"sequence": ["workbench.action.toggleAuxiliaryBar", "outline.focus"]
+					}
+				},
+				{
+					"key": "when:view.outline.visible",
+					// outlinerExplorerView.active &&
+					"name": "Hide outline",
+					"type": "command",
+					"command": "workbench.action.toggleAuxiliaryBar"
+				}
+			]
+		},
+		{
+			"key": "g",
+			"name": "git",
+			"type": "command",
+			"command": "workbench.view.scm" //c-s-g
+		},
+		{
+			"command": "workbench.action.quickOpen", //c-p
+			"key": "f",
+			"name": "findfile",
+			"type": "command"
+		},
+		{
+			"command": "workbench.view.search", //c-s-f
+			"key": "F",
+			"name": "Search Word",
+			"type": "command"
+		},
+		{
+			"command": "search.action.openEditor", //打开搜索编辑器
+			"key": "r",
+			"name": "New Search Editor",
+			"type": "command"
+		},
+		{
+			"command": "workbench.action.closeActiveEditor", //
+			"key": "w",
+			"name": "close tab",
+			"type": "command"
+		},
+		{
+			"command": "workbench.action.gotoSymbol", //c-s-o (c-p @)
+			"key": "s",
+			"name": "Search document symbol",
+			"type": "command"
+		},
+		{
+			"command": "workbench.action.showAllSymbols", //c-t
+			"key": "S",
+			"name": "Search project symbol",
+			"type": "command"
+		}
+	],
+
+	//better comments
+	// "better-comments.tags": [
+	// {
+	// 	"tag": "//",
+	// 	"color": "#5B9955", // change this
+	// 	"strikethrough": false,
+	// 	"underline": false,
+	// 	"backgroundColor": "transparent",
+	// 	"bold": false,
+	// 	"italic": false
+	// }
+	// ],
+	// ==================== end 3.universal extensions ====================
+
+	// ==================== 4.vim ====================
+	"vim.foldfix": true, // to avoid fold open up autocamatically
+	"vim.gdefault": true, // substitute use flag /g default
+	"vim.highlightedyank.enable": true,
+	"vim.sneakReplacesF": true, // means f can over line
+	"vim.easymotion": false, //plug
+	"vim.surround": true, //plug
+	"vim.sneak": true, //plug
+	"vim.sneakUseIgnorecaseAndSmartcase": true,
+	// leap by https://github.com/cuixiaorui/VSCodeVim/tree/leap
+	"vim.leap": false,
+	"vim.leapShowMarkerPosition": "after",
+	"vim.leapLabels": "sklyuiopnm,qwertzxcvbahdgjf;",
+	"vim.leapCaseSensitive": false,
+	"vim.leapBidirectionalSearch": false,
+	// flash by cxy (cvim)
+	"vim.flash.enable": true,
+	"vim.flash.ignorecase": true,
+	"vim.flash.marker.backgroundColor": "#ccff88",
+	"vim.flash.marker.nextMatchBackgroundColor": "#45FFCA",
+	"vim.replaceWithRegister": true,
+	"vim.useCtrlKeys": true,
+	"vim.useSystemClipboard": true,
+	"vim.overrideCopy": false,
+	"vim.hlsearch": true,
+	"vim.incsearch": true,
+	"vim.whichwrap": "b,s",
+	"vim.mouseSelectionGoesIntoVisualMode": true,
+	// "vim.debug.loggingLevelForConsole": "debug",
+	"vim.vimrc.enable": true,
+	"vim.vimrc.path": "C:\\Users\\79481\\AppData\\Roaming\\Code\\User\\.vsvimrc",
+	// "vim.enableNeovim": true, //excommand, :g  subsitidue bug
+	// "vim.neovimPath": "D:\\Scoop\\apps\\neovim\\current\\bin\\nvim.exe",
+	"vim.leader": "<Space>",
+	"vim.timeout": 1000,
+	// see https://github.com/daipeihust/im-select#windows-1
+	// 用git bash 可以看im 是多少,可惜不能判断微软中文中英
+	// "vim.autoSwitchInputMethod.enable": false,
+	// "vim.autoSwitchInputMethod.defaultIM": "1033", //enus,
+	// "vim.autoSwitchInputMethod.obtainIMCmd": "D:\\Scoop\\apps\\im-select\\current\\im-select.exe",
+	// "vim.autoSwitchInputMethod.switchIMCmd": "D:\\Scoop\\apps\\im-select\\current\\im-select.exe {im}",
+	"vim.handleKeys": {
+		// keybinds.json中vim.remap 比vim.handlekey优先级高
+		"<C-c>": false,
+		"<C-v>": false,
+		"<C-z>": false, // remap u in normal
+		"<C-k>": false,
+		"<C-e>": false,
+		"<C-f>": false,
+		"<C-s>": false,
+		"<C-w>": false,
+		"<C-m>": true, //only in CommandlineInProgress (<cr>)
+
+		"<C-y>": true, //i输入上方字符/n文本上滚
+		"<C-r>": true, //i输入下方字符(c-e)/n 重做
+		"<C-o>": true,
+		"<C-i>": true,
+		"<C-a>": true,
+		"<C-x>": true,
+		"<C-u>": true,
+		"<C-d>": true,
+		"<C-[>": true,
+		"<C-q>": true
+	},
+	// Alt+key or Ctrl+Shift+key必须在keybinds.json定义
+	// 见https://github.com/VSCodeVim/Vim/tree/master#remapping-more-complex-key-combinations
+	"vim.normalModeKeyBindings": [
+		// { "before": ["<c-z>"], "after": ["u"] },
+		// { "before": ["<leader>", "l"], "after": ["0", "f", "(", "l", "g", "l"] },
+		// { "before": ["<leader>", "l"], "after": ["m", "`", "0", "f", "(", "l", "g", "l"] },
+		// { "before": ["<leader>", "K"], "after": ["m", "`", "f", "(", "g", "d"] }
+	],
+	"vim.insertModeKeyBindings": [],
+	"vim.visualModeKeyBindings": [],
+	"vim.operatorPendingModeKeyBindings": [],
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": ["<leader>", "t", "c"],
+			"commands": ["workbench.action.terminal.copyLastCommandOutput"]
+		},
+		// {
+			// "before": ["<leader>","a","r"],
+			// "after": ["R"],
+		// },
+		{
+			"before": ["Q"],
+			"commands": ["scrollLeft", "scrollLeft", "scrollLeft", "scrollLeft", "scrollLeft"]
+		},
+		{
+			"before": ["E"],
+			"commands": ["scrollRight", "scrollRight", "scrollRight", "scrollRight", "scrollRight"]
+		},
+
+		{ "before": ["<leader>", "O"], "commands": ["workbench.action.closeEditorsInOtherGroups"] }, //
+		{ "before": ["<c-u>"], "commands": ["cursorPageUp"] },
+		// --- g (code action) builtin: gd,gD,gh
+		{ "before": ["g", "l"], "commands": ["editor.action.openLink"] },
+		// { "before": ["d", "a", "f"], "commands": ["delete-function.deleteFunction"] }, //
+		{ "before": ["<Tab>"], "commands": ["editor.action.indentLines"] }, //
+		{ "before": ["<S-Tab>"], "commands": ["editor.action.outdentLines"] }, //
+		// { "before": ["<A-,>"], "after": ["g", ";"] }, //
+		/*flash 
+		{
+			"before": ["<C-d>"],
+			"commands": [
+				{
+					"command": "editorScroll",
+					"args": {
+						"to": "down",
+						"by": "halfPage",
+						"revealCursor": true,
+						"value": 1
+					}
+				},
+				{ "command": "cursorUp" }
+			]
+			}, */
+
+		// --- leader x (extensions)
+		{ "before": ["<leader>", "x", "c"], "commands": ["ahk2.generate.comment"] },
+
+		// --- leader w (windows)
+		{ "before": ["<leader>", "w", "h"], "commands": ["workbench.action.moveEditorToLeftGroup"] },
+		{ "before": ["<leader>", "w", "l"], "commands": ["workbench.action.moveEditorToRightGroup"] },
+		{ "before": ["<leader>", "w", "j"], "commands": ["workbench.action.moveEditorToBelowGroup"] },
+		{ "before": ["<leader>", "w", "k"], "commands": ["workbench.action.moveEditorToAboveGroup"] },
+
+		{ "before": ["<leader>", "1"], "commands": ["workbench.action.openEditorAtIndex1"] }, //markdow
+		{ "before": ["<leader>", "9"], "commands": ["workbench.action.lastEditorInGroup"] }, //markdow
+		// { "before": ["<tab>"], "commands": ["editor.action.smartSelect.expand"] }, //
+		{
+			"before": ["<leader>", "<tab>"],
+			"commands": ["workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup", "list.select"]
+		},
+		{ "before": ["<leader>", "c"], "after": ["g", "c"] },
+		{
+			"before": ["<leader>", "q"],
+			"commands": ["markdown.extension.editing.toggleCodeSpan"],
+			"after": ["<esc>"]
+		}, //markdown
+		{ "before": ["<leader>", "k"], "after": ["g", "h"] }, //vimrc has bug
+		// { "before": ["<leader>", "k"], "after": ["g", "d"] }, // define in vim.normalmodekeybindings
+		{ "before": ["<leader>", "r"], "commands": ["editor.action.rename"] },
+		{ "before": ["<leader>", "f"], "commands": ["editor.action.formatDocument"] },
+		{ "before": ["<leader>", "u"], "commands": ["editor.action.referenceSearch.trigger"] },
+		{ "before": ["<leader>", "U"], "commands": ["references-view.findReferences"] },
+		{ "before": ["<leader>", "g", "u"], "commands": ["references-view.showCallHierarchy"] },
+
+		// --- leader g 少用的默认命令
+		{ "before": ["<leader>", "g", "s"], "commands": ["workbench.action.populateFileFromSnippet"] },
+
+		// --- leader e 文件相关命令
+		{ "before": ["<leader>", "e", "e"], "commands": ["revealFileInOS"] },
+		{ "before": ["<leader>", "e", "f"], "commands": ["workbench.action.files.openFile"] },
+		{ "before": ["<leader>", "e", "F"], "commands": ["workbench.action.files.openFolder"] },
+		{ "before": ["<leader>", "e", "s"], "commands": ["workbench.action.files.saveAs"] },
+		{ "before": ["<leader>", "e", "a"], "commands": ["workbench.action.addRootFolder"] },
+		{ "before": ["<leader>", "e", "r"], "commands": ["workbench.action.openRecent"] }, //c-r
+		{ "before": ["<leader>", "e", "y"], "commands": ["copyFilePath"] }, //a-s-c
+		{ "before": ["<leader>", "e", "Y"], "commands": ["copyRelativeFilePath"] }, //c-k a-s-c
+
+		// --- <leader>b bookmark
+		{ "before": ["<leader>", "b", "j"], "commands": ["bookmarks.jumpToNext"] },
+		{ "before": ["<leader>", "b", "k"], "commands": ["bookmarks.jumpToPrevious"] },
+		{ "before": ["<leader>", "b", "a"], "commands": ["bookmarks.toggleLabeled"] },
+		{ "before": ["<leader>", "b", "D"], "commands": ["bookmarks.toggle"] },
+		{ "before": ["<leader>", "b", "c", "c"], "commands": ["bookmarks.clear"] },
+		{ "before": ["<leader>", "b", "c", "a"], "commands": ["bookmarks.clearFromAllFiles"] },
+		{ "before": ["<leader>", "b", "l", "l"], "commands": ["bookmarks.list"] },
+		{ "before": ["<leader>", "b", "l", "a"], "commands": ["bookmarks.listFromAllFiles"] },
+
+		// --- z fold
+		// vim builtin : zc zC zo zO zf zd zr zm
+		{ "before": ["z", "v"], "commands": ["dakara-foldplus.cursor.exclude"] }, //zm c-o?
+		{ "before": ["z", "p"], "commands": ["dakara-foldplus.parent"] },
+		{ "before": ["z", "h"], "commands": ["dakara-foldplus.children"] },
+		{ "before": ["z", "a", "a"], "commands": ["dakara-foldplus.levelAtCursor"] },
+		{ "before": ["z", "a", "u"], "commands": ["dakara-foldplus.levelAtCursor.unfold"] },
+		{ "before": ["z", "a", "p"], "commands": ["dakara-foldplus.levelOfParent"] },
+		{ "before": ["z", "s", "s"], "commands": ["dakara-foldplus.selection"] },
+		{ "before": ["z", "s", "e"], "commands": ["dakara-foldplus.selection.exclude"] },
+		{ "before": ["z", "s", "u"], "commands": ["dakara-foldplus.selection.unfold"] },
+		// fold all siblings zuzCzz c-o
+		// unfold all siblings zuzOzz c-o
+		// dakara-foldplus.regex.unfold
+		// zj,zk,zJ,zK,zu,zb,z1-7
+		{ "before": ["z", "j"], "commands": ["editor.gotoNextFold"] }, //slibing
+		{ "before": ["z", "k"], "commands": ["editor.gotoPreviousFold"] }, //slibing
+		{ "before": ["z", "u"], "after": ["m", "`"], "commands": ["editor.gotoParentFold"] }, //father
+		{ "before": ["z", "J"], "commands": ["editor.gotoParentFold", "editor.gotoNextFold"] }, //uncle
+		{ "before": ["z", "K"], "commands": ["editor.gotoParentFold", "editor.gotoPreviousFold"] }, //uncle
+		{ "before": ["z", "b"], "commands": ["editor.foldAllBlockComments"] },
+		{ "before": ["z", "1"], "commands": ["editor.foldLevel1"] },
+		{ "before": ["z", "2"], "commands": ["editor.foldLevel2"] },
+		{ "before": ["z", "3"], "commands": ["editor.foldLevel3"] },
+		{ "before": ["z", "4"], "commands": ["editor.foldLevel4"] },
+		{ "before": ["z", "5"], "commands": ["editor.foldLevel5"] },
+		{ "before": ["z", "6"], "commands": ["editor.foldLevel6"] },
+		{ "before": ["z", "7"], "commands": ["editor.foldLevel7"] },
+		// editor.unfoldAllExcept
+		// editor.foldAllExcept
+		// --- z fold end
+
+		// --- <leader>d diff debug and marker
+		{
+			"before": ["<leader>", "d", "r"],
+			"commands": ["workbench.action.files.save", "workbench.action.debug.start"]
+		},
+		{ "before": ["<leader>", "d", "d"], "commands": ["editor.debug.action.toggleBreakpoint"] }, //f9
+		{ "before": ["<leader>", "d", "f"], "commands": ["workbench.files.action.compareFileWith"] },
+		{ "before": ["<leader>", "d", "c"], "commands": ["editor.debug.action.conditionalBreakpoint"] },
+		{ "before": ["<leader>", "d", "k"], "commands": ["editor.action.marker.prev"] }, //prevInFiles
+		{ "before": ["<leader>", "d", "j"], "commands": ["editor.action.marker.next"] },
+		// --- <leader>d end
+
+		// --- <leader>m markdown
+		{
+			"before": ["<leader>", "m", "t"],
+			"after": ["g", "g"],
+			"commands": ["markdown.extension.toc.create"]
+		},
+		{ "before": ["<leader>", "m", "u"], "commands": ["markdown.extension.toc.update"] },
+		{ "before": ["<leader>", "m", "n"], "commands": ["markdown.extension.toc.addSecNumbers"] },
+		{ "before": ["<leader>", "m", "r"], "commands": ["markdown.extension.toc.removeSecNumbers"] },
+		// --------------------unuse now
+
+		// {
+		// 	//     // -- git hunk nav  as
+		// 	"before": ["<leader>", "k"],
+		// 	"commands": ["workbench.action.editor.previousChange", "editor.action.dirtydiff.previous"]
+		// }
+		// {
+		// 	"before": ["<leader>", "j"],
+		// 	"commands": ["editor.action.dirtydiff.next"]
+		// 	//"commands": ["workbench.action.editor.nextChange", "editor.action.dirtydiff.next"]
+		// },
+
+		// git (un)stage
+		{ "before": ["<leader>", "g", "d"], "commands": ["gitlens.diffWithPrevious"] },
+		{ "before": ["<leader>", "g", "s"], "commands": ["git.stage"] },
+		{ "before": ["<leader>", "g", "u"], "commands": ["git.unstage"] },
+		{ "before": ["<leader>", "g", "f"], "commands": ["editor.action.marker.prev"] }
+		// --------------------end
+	],
+	"vim.visualModeKeyBindingsNonRecursive": [
+		{ "before": ["<tab>"], "commands": ["editor.action.indentLines"] }, //
+		{ "before": ["<S-tab>"], "commands": ["editor.action.outdentLines"] }, //
+		{ "before": ["<leader>", "c"], "after": ["g", "c"] },
+		{ "before": ["<leader>", "C"], "after": ["g", "C"] },
+		{ "before": ["<bs>"], "commands": ["editor.action.smartSelect.shrink"] }, //
+		{ "before": ["<leader>", "="], "commands": ["align.by.regex"] },
+		{ "before": ["z", "v"], "commands": ["dakara-foldplus.selection.exclude"] },
+		{ "before": ["<leader>", "f"], "commands": ["editor.action.formatSelection"] } //c-k c-f
+		// { "before": ["<tab>"], "commands": ["editor.action.smartSelect.expand"] }, //
+		// { "before": ["\\", "\\", "1"], "commands": ["extension.toggleBool"] }, //<>xb
+	],
+	"vim.insertModeKeyBindingsNonRecursive": [
+		{ "before": ["<c-r>"], "after": ["<c-e>"] } //
+	],
+	// ==================== end 4.vim ====================
+
+	// ==================== 5.neovim ==================== a
+	"extensions.experimental.affinity": { "asvetliakov.vscode-neovim": 1 },
+	"vscode-neovim.neovimExecutablePaths.win32": "D:/Scoop/apps/neovim/current/bin/nvim.exe",
+	"vscode-neovim.neovimInitVimPaths.win32": "C:\\Users\\79481\\AppData\\Roaming\\Code\\User\\vsinit.vim",
+	// "vscode-neovim.neovimInitVimPaths.win32": "C:/Users/79481/AppData/Local/nvim/init.lua",
+	"vscode-neovim.useCtrlKeysForInsertMode": false,
+	"vscode-neovim.useCtrlKeysForNormalMode": true,
+	"vscode-neovim.logOutputToConsole": true,
+	// ==================== end 5.neovim ====================
+
+	"markdown.extension.print.absoluteImgPath": false,
+	"dictCompletion.leastNumOfChars": 3,
+	"better-comments.highlightPlainText": true,
+	"zenMode.hideLineNumbers": false,
+	"editor.minimap.enabled": false,
+	"[cpp]": { "editor.defaultFormatter": "ms-vscode.cpptools" },
+	"chatgpt.password": "asd",
+	"security.workspace.trust.untrustedFiles": "open",
+	"git.confirmSync": false,
+	"C_Cpp.intelliSenseCachePath": "D:\\VSCode\\cpp_cache",
+	"C_Cpp.intelliSenseCacheSize": 512,
+	"C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
+	"C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
+	"C_Cpp.vcFormat.newLine.beforeOpenBrace.lambda": "sameLine",
+	"C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace": "sameLine",
+	"C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "sameLine",
+	"C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,
+	"C_Cpp.formatting": "clangFormat",
+	"terminal.integrated.enableMultiLinePasteWarning": false,
+	"C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4}",
+	"[ahk]": { "editor.defaultFormatter": "mark-wiemer.vscode-autohotkey-plus-plus" },
+	"C_Cpp.autocompleteAddParentheses": true,
+	"vscode-note.notespath": "D:\\\\asd",
+	"toggleboolean.mapping": {
+		"0": 1,
+		"1": 0,
+		"true": false,
+		"false": true,
+		"yes": "no",
+		"no": "yes",
+		"on": "off",
+		"off": "on"
+	},
+	"workbench.colorTheme": "Default Dark+",
+	"go.gopath": "",
+	"[go]": {
+		"editor.defaultFormatter": "golang.go"
+	},
+	"markdown-pdf.displayHeaderFooter": false,
+	"remote.SSH.remotePlatform": {
+		"10.176.22.16": "linux",
+		"10.192.11.117": "linux",
+		"10.176.22.26": "linux"
+	},
+	"[es]": {
+		"editor.defaultFormatter": "cweijan.vscode-mysql-client2"
+	},
+	"pasteImage.basePath": "${currentFileDir}",
+	"pasteImage.path": "${currentFileDir}/img",
+	"git.enableSmartCommit": true,
+	"boxDrawing.style": "ascii",
+	"ahk++.file.interpreterPathV2": "D:/AutoHotKey/v2/AutoHotkey64.exe",
+	"ahk++.file.interpreterPathV1": "D:/AutoHotKey/v2/AutoHotkey64.exe",
+	"ahk++.file.helpPathV2": "D:/AutoHotKey/v2/AutoHotkey.chm"
+
+}

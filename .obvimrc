@@ -1,0 +1,114 @@
+" 放在项目目录或其他地方,详见vim插件setting
+unmap <Space>
+" Have j and k navigate visual lines rather than logical ones
+exmap lineStart cmcommand goLineLeftSmart
+exmap lineEnd cmcommand goLineRight
+nmap H lineStart
+nmap L lineEnd
+vmap gh ^
+vmap gl $
+nmap gh ^
+nmap gl $
+" this map not work
+imap jk <ESC><ESC>
+nmap j gj
+nmap k gk
+
+" Quickly remove search highlights
+nmap <a-n> :nohl
+" Yank to system clipboard
+set clipboard=unnamed
+
+" Go back and forward with Ctrl+O and Ctrl+I
+" (make sure to remove default Obsidian shortcuts for these to work)
+exmap back obcommand app:go-back
+nmap <A-a> :back
+exmap forward obcommand app:go-forward
+nmap <A-d> :forward
+
+" Create links"
+exmap insertLink obcommand editor:insert-link
+map <A-y> :pasteinto
+
+" Surround text with [[ ]] to make a wikilink
+" NOTE: must use 'map' and not 'nmap'
+exmap wiki surround [[ ]]
+map <A-m> :wiki 
+
+exmap openLink obcommand editor:follow-link
+map <A-q> :openLink
+
+" Reload Obsidian
+exmap reload obcommand app:reload
+map <A-r> :reload
+
+"exmap commandPalette obcommand command-palette:open
+""map <A-f> :commandPalette
+
+" Reload Obsidian
+exmap goParent obcommand breadcrumbs:jump-to-first-up
+map gu :goParent
+
+exmap nextTab obcommand workspace:next-tab
+exmap prevTab obcommand workspace:previous-tab
+map gt :nextTab
+map gT :prevTab
+
+
+exmap easymotion obcommand mrj-jump-to-link:activate-jump-to-anywhere
+map gw :easymotion
+
+exmap close obcommand workspace:close
+map <Space>c :close
+map gc :close
+
+exmap vs obcommand workspace:split-vertical
+map gp :vs
+
+" close other tabs
+exmap to obcommand workspace:close-others
+map to :to
+
+exmap x obcommand workspace:close
+exmap df obcommand app:delete-file
+
+exmap nextHeading jsfile mdHelpers.js {jumpHeading(true)}
+exmap prevHeading jsfile mdHelpers.js {jumpHeading(false)}
+nmap ]] :nextHeading
+nmap [[ :prevHeading
+
+exmap logCursor jscommand { console.log(editor.getCursor()); }
+nmap <C-q> :logCursor
+
+" exmap togglefold obcommand editor:toggle-fold
+" nmap zf :togglefold
+" nmap zu :togglefold
+
+exmap unfoldall obcommand editor:unfold-all
+nmap zU :unfoldall
+
+exmap foldall obcommand editor:fold-all
+nmap zF :foldall
+
+exmap it obcommand templater-obsidian:insert-templater
+nmap <Space>i :it
+
+
+" ---------------------------------------------
+" nmap j gj
+" nmap k gk
+" nmap 0 :g0
+" nmap $ :gDollar
+" nmap [[ :pHead
+" nmap ]] :nHead
+
+
+" vmap j gj
+" vmap k gk
+
+" ----------------------------------------
+" unmap <Space>
+" exmap enrich_vim_search_pattern obcommand obsidian-vim-multibyte-char-search:enrich-current-vim-search-pattern
+" exmap search_multibytes obcommand obsidian-vim-multibyte-char-search:search-multibytes
+" nmap <Space>n :enrich_vim_search_pattern
+" nmap <Space>/ :search_multibytes

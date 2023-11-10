@@ -13,6 +13,7 @@ unmap 8
 unmap 9
 unmap 0
 
+# map :e toggleUrl
 # ----------------------------------------shift space
 # 为不同网站执行不同命令
 # https://github.com/gdh1995/vimium-c/wiki/Map-a-key-to-different-commands-on-different-websites
@@ -22,9 +23,14 @@ map <s-space> runKey expect="bili:<v-fh1>;vac:<v-fh2>" keys="<v-fd>"
 map <v-fh1> openUrl url="javascript:document.querySelector(\".bpx-player-ctrl-play\").click()" #b站播放
 map <v-fh2> openUrl url="javascript:document.querySelector(\".audio\").click()" #播放音频vacbory
 
+# mapKey u
+map u runKey expect="bili:<v-ubili>;vac:<v-u2>" keys="<v-fd>"
+map <v-ubili> openUrl url="javascript:document.querySelector(\".bpx-player-ctrl-btn.bpx-player-ctrl-full\").click()" #b站播放
+
+
 # ----------------------------------------暂停快捷键
 map <c-\> enterInsertMode key="<c-\\>"   # c-\暂停所有快捷键
-# map \ enterInsertMode key="\\"          # \暂停所有快捷键
+map \ enterInsertMode key="\\"          # \暂停所有快捷键
 
 
 # ----------------------------------------右手补充
@@ -50,7 +56,7 @@ map W scrollFullPageUp
 map a previousTab
 map d nextTab
 
-map <space>a firstTab           
+map <space>a firstTab 
 map <space>d lastTab
 
 map t createTab position="right"
@@ -147,7 +153,7 @@ map <space>p captureTab                   # 当前页面截图(不是截长图)
 
 # ----------------------------------------一些网站
 map <space><space>q createTab url="https://mail.qq.com/cgi-bin/frame_html?sid=3OhNHe_I8q32U3wf&r=d2672e56a4843310dbb453e590e616ea"
-map <space><space>c createTab url="https://chat.openai.com/chat"
+map <space><space>c focusOrLaunch url="https://chat.openai.com" prefix
 map <space><space>v createTab url="chrome-extension://hfjbmagddngcpeloejdejnfgbamkjaeg/pages/options.html"
 map <space><space>b createTab url="https://www.bilibili.com/"
 map <space><space>o createTab url="chrome-extension://chphlpgkkbolifaimnlloiipkdnihall/onetab.html"

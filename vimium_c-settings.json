@@ -1,11 +1,11 @@
 {
 	"name": "Vimium C",
-	"@time": "2023/11/1 21:33:35",
-	"time": 1698845615602,
+	"@time": "2023/11/11 06:03:42",
+	"time": 1699653822411,
 	"environment": {
 		"extension": "1.99.994",
 		"platform": "win",
-		"chromium": 118
+		"chromium": 119
 	},
 	"allBrowserUrls": true,
 	"exclusionOnlyFirstMatch": true,
@@ -47,13 +47,14 @@
 			"pattern": ":https://asciiflow.com/"
 		},
 		{
-			"passKeys": "+ - . 0 1 2 3 4 5 6 7 8 9 <space> [ ] c z ",
+			"passKeys": "+ - . <space> [ ] c z ",
 			"pattern": ":https://www.bilibili.com/"
 		}
 	],
 	"keyLayout": 4,
 	"keyMappings": [
 		"#!no-check",
+		"# 2023-11-01",
 		"map <space><space><space> showHelp # 同?",
 		"",
 		"# 数字键用的少,全局禁用了,留给GlobalSpeed",
@@ -68,6 +69,7 @@
 		"unmap 9",
 		"unmap 0",
 		"",
+		"# map :e toggleUrl",
 		"# ----------------------------------------shift space",
 		"# 为不同网站执行不同命令",
 		"# https://github.com/gdh1995/vimium-c/wiki/Map-a-key-to-different-commands-on-different-websites",
@@ -77,9 +79,14 @@
 		"map <v-fh1> openUrl url=\"javascript:document.querySelector(\\\".bpx-player-ctrl-play\\\").click()\" #b站播放",
 		"map <v-fh2> openUrl url=\"javascript:document.querySelector(\\\".audio\\\").click()\" #播放音频vacbory",
 		"",
+		"# mapKey u",
+		"map u runKey expect=\"bili:<v-ubili>;vac:<v-u2>\" keys=\"<v-fd>\"",
+		"map <v-ubili> openUrl url=\"javascript:document.querySelector(\\\".bpx-player-ctrl-btn.bpx-player-ctrl-full\\\").click()\" #b站播放",
+		"",
+		"",
 		"# ----------------------------------------暂停快捷键",
 		"map <c-\\> enterInsertMode key=\"<c-\\\\>\"   # c-\\暂停所有快捷键",
-		"# map \\ enterInsertMode key=\"\\\\\"          # \\暂停所有快捷键",
+		"map \\ enterInsertMode key=\"\\\\\"          # \\暂停所有快捷键",
 		"",
 		"",
 		"# ----------------------------------------右手补充",
@@ -105,7 +112,7 @@
 		"map a previousTab",
 		"map d nextTab",
 		"",
-		"map <space>a firstTab           ",
+		"map <space>a firstTab ",
 		"map <space>d lastTab",
 		"",
 		"map t createTab position=\"right\"",
@@ -202,7 +209,7 @@
 		"",
 		"# ----------------------------------------一些网站",
 		"map <space><space>q createTab url=\"https://mail.qq.com/cgi-bin/frame_html?sid=3OhNHe_I8q32U3wf&r=d2672e56a4843310dbb453e590e616ea\"",
-		"map <space><space>c createTab url=\"https://chat.openai.com/chat\"",
+		"map <space><space>c focusOrLaunch url=\"https://chat.openai.com\" prefix",
 		"map <space><space>v createTab url=\"chrome-extension://hfjbmagddngcpeloejdejnfgbamkjaeg/pages/options.html\"",
 		"map <space><space>b createTab url=\"https://www.bilibili.com/\"",
 		"map <space><space>o createTab url=\"chrome-extension://chphlpgkkbolifaimnlloiipkdnihall/onetab.html\"",

@@ -1,5 +1,6 @@
-// 2023-11-01 21:19:44
 [
+	// json不允许注释我把扩展名字改为jsonc
+	// 2023-11-01
 	// s-space c-i suggestion
 	// c-s-space a-; arg-suggestion
 	/* +------------------- test -------------------+ */
@@ -302,6 +303,12 @@
 		"command": "acceptSelectedSuggestion",
 		"when": "editorTextFocus && suggestWidgetVisible"
 	},
+	// {
+	// 	"key": "alt+w",
+	// 	"command": "vim.remap",
+	// 	"when": "inputFocus && vim.mode=='Normal'",
+	// 	"args": { "after": ["<c-w>"] }
+	// },
 	// markdown
 	{
 		"key": "ctrl+l",
@@ -314,9 +321,21 @@
 		"when": "editorTextFocus && markdowntable.contextkey.selection.InMarkdownTable && !editorReadonly && !editorTabMovesFocus && !inSnippetMode && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible && editorLangId == 'markdown'"
 	},
 	{
+		"key": "ctrl+h",
+		"command": "workbench.action.terminal.focusPreviousPane",
+		"when": "inputFocus && terminalFocus && terminalCount > 1"
+	},
+	{
 		"key": "ctrl+l",
-		"command": "",
-		"when": "inputFocus && terminalFocus"
+		"command": "workbench.action.terminal.focusNextPane",
+		"when": "inputFocus && terminalFocus && terminalCount > 1"
+	},
+	// findInputFocussed"
+	{
+		"key": "ctrl+l", //ctrl + j
+		"command": "editor.action.nextMatchFindAction",
+		"when": "editorFocus && findInputFocussed"
+		// "when": "replaceInputBoxFocus && searchViewletVisible"
 	},
 
 	// {
@@ -331,6 +350,12 @@
 		"key": "ctrl+shift+l",
 		"command": "breadcrumbs.focusAndSelect",
 		"when": "breadcrumbsPossible && breadcrumbsVisible"
+	},
+	{
+		"key": "ctrl+shift+l", // ctrl + k
+		"command": "editor.action.previousMatchFindAction",
+		"when": "editorFocus && findInputFocussed"
+		// "when": "replaceInputBoxFocus && searchViewletVisible"
 	},
 	/* ^------------------- c-s-h,l -------------------^ */
 
@@ -1177,17 +1202,15 @@
 	},
 	{
 		"key": "ctrl+p",
-		"command": "extension.multiCommand.execute",
-		"args": {
-			"interval": 1000, //must
-			"sequence": ["markdown.showPreviewToSide", "workbench.action.navigateLeft"]
-		},
+		// "command": "extension.multiCommand.execute",
+		"command": "markdown.showPreviewToSide",
+		// "command": "markdown.showLockedPreviewToSide",
+		// markdown.showPreviewToSide
+		// "args": {
+		// "interval": 1000, //must
+		// "sequence": ["markdown.showPreviewToSide", "workbench.action.navigateLeft"]
+		// },
 		"when": "!notebookEditorFocused && editorLangId == 'markdown'"
-	},
-	{
-		"key": "ctrl+p",
-		"command": "workbench.action.closeEditorsInOtherGroups",
-		"when": "editorTextFocus && editorLangId == 'markdown' && multipleEditorGroups"
 	},
 	{
 		"key": "tab",
@@ -1355,5 +1378,10 @@
 		"key": "alt+x",
 		"command": "markdown.extension.checkTaskList",
 		"when": "editorTextFocus && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+	},
+	{
+		"key": "alt+oem_3",
+		"command": "markdown.extension.editing.toggleCodeSpan",
+		"when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
 	}
 ]

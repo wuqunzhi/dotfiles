@@ -1,0 +1,537 @@
+{
+	"common": {
+		"audioFx": {
+			"comp": {
+				"attack": 0.003,
+				"enabled": false,
+				"gain": 1,
+				"knee": 30,
+				"ratio": 12,
+				"release": 0.25,
+				"threshold": -24
+			},
+			"delay": 0.8000000000000002,
+			"eq": { "enabled": false, "factor": 1, "values": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0] },
+			"pitch": 0,
+			"volume": 1
+		},
+		"backdropFx": {
+			"enabled": false,
+			"filters": [
+				{ "name": "sepia", "value": 0 },
+				{ "name": "hueRotate", "value": 0 },
+				{ "name": "grayscale", "value": 0 },
+				{ "name": "contrast", "value": 1 },
+				{ "name": "brightness", "value": 2 },
+				{ "name": "saturate", "value": 1 },
+				{ "name": "invert", "value": 0 },
+				{ "name": "blur", "value": 0 },
+				{ "name": "opacity", "value": 1 }
+			],
+			"transforms": [
+				{ "name": "scaleX", "value": 1 },
+				{ "name": "scaleY", "value": 1 },
+				{ "name": "translateX", "value": 0 },
+				{ "name": "translateY", "value": 0 },
+				{ "name": "rotateX", "value": 0 },
+				{ "name": "rotateY", "value": 0 },
+				{ "name": "rotateZ", "value": 0 }
+			]
+		},
+		"elementFx": {
+			"enabled": false,
+			"filters": [
+				{ "name": "sepia", "value": 0 },
+				{ "name": "hueRotate", "value": 0 },
+				{ "name": "grayscale", "value": 0 },
+				{ "name": "contrast", "value": 1 },
+				{ "name": "brightness", "value": 2 },
+				{ "name": "saturate", "value": 1 },
+				{ "name": "invert", "value": 0 },
+				{ "name": "blur", "value": 0 },
+				{ "name": "opacity", "value": 1 }
+			],
+			"transforms": [
+				{ "name": "scaleX", "value": 1 },
+				{ "name": "scaleY", "value": 1 },
+				{ "name": "translateX", "value": 0 },
+				{ "name": "translateY", "value": 0 },
+				{ "name": "rotateX", "value": 0 },
+				{ "name": "rotateY", "value": 0 },
+				{ "name": "rotateZ", "value": 0 }
+			]
+		},
+		"enabled": true,
+		"enabledLatestViaPopup": true,
+		"lastSpeed": 2,
+		"speed": 1
+	},
+	"darkTheme": false,
+	"feedbackVolume": 0,
+	"freePitch": false,
+	"hideBadge": false,
+	"hideIndicator": false,
+	"hideMediaView": false,
+	"indicatorInit": {
+		"backgroundColor": null,
+		"offset": 1,
+		"rounding": 0,
+		"scaling": 1,
+		"static": false,
+		"textColor": null
+	},
+	"keybinds": [
+		{
+			"adjustMode": 1,
+			"command": "adjustSpeed",
+			"enabled": true,
+			"greedy": true,
+			"id": "1206251952",
+			"key": {
+				"altKey": false,
+				"code": "Numpad2",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": false
+			}
+		},
+		{
+			"adjustMode": 2,
+			"command": "adjustSpeed",
+			"enabled": true,
+			"greedy": true,
+			"id": "9356518647",
+			"key": {
+				"altKey": false,
+				"code": "Numpad1",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": false
+			},
+			"valueNumber": null,
+			"valueNumberAlt": -0.75
+		},
+		{
+			"adjustMode": 2,
+			"command": "adjustSpeed",
+			"enabled": true,
+			"greedy": true,
+			"id": "7405105520",
+			"key": {
+				"altKey": false,
+				"code": "Numpad3",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": false
+			},
+			"valueNumberAlt": 1
+		},
+		{
+			"command": "seek",
+			"enabled": true,
+			"greedy": true,
+			"id": "2012208314",
+			"key": {
+				"altKey": false,
+				"code": "Numpad4",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": false
+			},
+			"valueNumber": -5
+		},
+		{
+			"command": "seek",
+			"enabled": true,
+			"greedy": true,
+			"id": "7859175025",
+			"key": {
+				"altKey": false,
+				"code": "Numpad6",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": false
+			},
+			"valueNumber": 5
+		},
+		{
+			"command": "seek",
+			"enabled": true,
+			"greedy": true,
+			"id": "8099049581",
+			"key": {
+				"altKey": false,
+				"code": "Numpad7",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": false
+			},
+			"valueNumber": -20
+		},
+		{
+			"command": "seek",
+			"enabled": true,
+			"greedy": true,
+			"id": "4885635951",
+			"key": {
+				"altKey": false,
+				"code": "Numpad9",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": false
+			},
+			"valueNumber": 20
+		},
+		{
+			"command": "setMark",
+			"enabled": true,
+			"greedy": true,
+			"id": "9829690179",
+			"key": {
+				"altKey": false,
+				"code": "Numpad5",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": false
+			},
+			"valueString": "mark1"
+		},
+		{
+			"command": "seekMark",
+			"enabled": true,
+			"greedy": true,
+			"id": "512122475",
+			"key": {
+				"altKey": false,
+				"code": "Numpad8",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": false
+			},
+			"valueString": "mark1"
+		},
+		{
+			"command": "seek",
+			"enabled": true,
+			"greedy": true,
+			"id": "7326697919",
+			"key": {
+				"altKey": false,
+				"code": "NumpadSubtract",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": false
+			},
+			"valueNumber": -0.033
+		},
+		{
+			"command": "seek",
+			"enabled": true,
+			"greedy": true,
+			"id": "9594418544",
+			"key": {
+				"altKey": false,
+				"code": "NumpadAdd",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": false
+			},
+			"valueNumber": 0.033
+		},
+		{
+			"command": "speedChangesPitch",
+			"enabled": true,
+			"greedy": true,
+			"id": "8880728987",
+			"key": {
+				"altKey": false,
+				"code": "NumpadDecimal",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": false
+			},
+			"spacing": 0,
+			"valueState": "toggle"
+		},
+		{
+			"command": "setPause",
+			"enabled": true,
+			"greedy": true,
+			"id": "8027136423",
+			"key": {
+				"altKey": false,
+				"code": "Semicolon",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": false
+			},
+			"spacing": 0,
+			"valueState": "toggle"
+		},
+		{
+			"command": "setPause",
+			"enabled": true,
+			"greedy": true,
+			"id": "7724298972",
+			"key": {
+				"altKey": false,
+				"code": "Numpad0",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": false
+			},
+			"spacing": 2,
+			"valueState": "toggle"
+		},
+		{
+			"adjustMode": 2,
+			"command": "adjustSpeed",
+			"enabled": true,
+			"greedy": true,
+			"id": "212175140",
+			"key": {
+				"altKey": false,
+				"code": "Digit1",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": false
+			},
+			"valueNumberAlt": -0.75
+		},
+		{
+			"adjustMode": 1,
+			"command": "adjustSpeed",
+			"enabled": true,
+			"greedy": true,
+			"id": "674710979",
+			"key": {
+				"altKey": false,
+				"code": "Digit2",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": false
+			},
+			"valueNumber": 1
+		},
+		{
+			"adjustMode": 2,
+			"command": "adjustSpeed",
+			"enabled": true,
+			"greedy": true,
+			"id": "908486860",
+			"key": {
+				"altKey": false,
+				"code": "Digit3",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": false
+			},
+			"spacing": 0,
+			"valueNumberAlt": 1
+		},
+		{
+			"command": "seek",
+			"enabled": true,
+			"greedy": true,
+			"id": "787061912",
+			"key": {
+				"altKey": false,
+				"code": "Digit4",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": false
+			},
+			"valueNumber": -5
+		},
+		{
+			"command": "seek",
+			"enabled": true,
+			"greedy": true,
+			"id": "1935637303",
+			"key": {
+				"altKey": false,
+				"code": "Digit6",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": false
+			},
+			"spacing": 2,
+			"valueNumber": 5
+		},
+		{
+			"command": "seek",
+			"enabled": true,
+			"greedy": true,
+			"id": "7384298872",
+			"key": {
+				"altKey": false,
+				"code": "Comma",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": false
+			},
+			"spacing": 0,
+			"valueNumber": -20
+		},
+		{
+			"command": "seek",
+			"enabled": true,
+			"greedy": true,
+			"id": "1387118661",
+			"key": {
+				"altKey": false,
+				"code": "Period",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": false
+			},
+			"valueNumber": 20
+		},
+		{
+			"command": "seek",
+			"enabled": true,
+			"greedy": true,
+			"id": "8736855318",
+			"key": {
+				"altKey": false,
+				"code": "KeyC",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": false
+			},
+			"spacing": 0,
+			"valueNumber": 5
+		},
+		{
+			"adjustMode": 1,
+			"command": "adjustSpeed",
+			"enabled": true,
+			"greedy": true,
+			"id": "1690692269",
+			"key": {
+				"altKey": false,
+				"code": "KeyX",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": false
+			},
+			"spacing": 0
+		},
+		{
+			"command": "seek",
+			"enabled": true,
+			"greedy": true,
+			"id": "1810861721",
+			"key": {
+				"altKey": false,
+				"code": "KeyZ",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": false
+			},
+			"valueNumber": -5
+		},
+		{
+			"command": "seek",
+			"enabled": true,
+			"greedy": true,
+			"id": "1066661975",
+			"key": {
+				"altKey": false,
+				"code": "KeyC",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": true
+			},
+			"valueNumber": 20
+		},
+		{
+			"command": "seek",
+			"enabled": true,
+			"greedy": true,
+			"id": "5330981899",
+			"key": {
+				"altKey": false,
+				"code": "KeyZ",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": true
+			},
+			"spacing": 2,
+			"valueNumber": -20
+		},
+		{
+			"command": "setMark",
+			"enabled": true,
+			"greedy": true,
+			"id": "9430045402",
+			"key": {
+				"altKey": false,
+				"code": "KeyS",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": false
+			},
+			"valueString": "mark1"
+		},
+		{
+			"command": "seekMark",
+			"enabled": true,
+			"greedy": true,
+			"id": "7620339825",
+			"key": {
+				"altKey": false,
+				"code": "KeyW",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": false
+			},
+			"valueString": "mark1"
+		},
+		{
+			"command": "toggleLoop",
+			"enabled": true,
+			"greedy": true,
+			"id": "5191583292",
+			"key": "KeyR",
+			"spacing": 0,
+			"valueString": "mark1"
+		},
+		{
+			"command": "seek",
+			"enabled": true,
+			"greedy": true,
+			"id": "85826792",
+			"key": {
+				"altKey": false,
+				"code": "Equal",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": false
+			},
+			"valueNumber": 1
+		},
+		{
+			"command": "seek",
+			"enabled": true,
+			"greedy": true,
+			"id": "9936727623",
+			"key": {
+				"altKey": false,
+				"code": "Minus",
+				"ctrlKey": false,
+				"metaKey": false,
+				"shiftKey": false
+			},
+			"valueNumber": -1
+		}
+	],
+	"keybindsUrlCondition": null,
+	"language": "detect",
+	"rules": [],
+	"showNetSeek": false,
+	"speedPresetRows": 4,
+	"speedSlider": { "max": 1.5, "min": 0.5 },
+	"staticOverlay": false,
+	"version": 10
+}

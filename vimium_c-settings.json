@@ -1,7 +1,7 @@
 {
 	"name": "Vimium C",
-	"@time": "2023/11/11 06:03:42",
-	"time": 1699653822411,
+	"@time": "2023/11/14 20:41:31",
+	"time": 1699965691202,
 	"environment": {
 		"extension": "1.99.994",
 		"platform": "win",
@@ -11,43 +11,15 @@
 	"exclusionOnlyFirstMatch": true,
 	"exclusionRules": [
 		{
-			"passKeys": "1 2 3 4 5 6 7 8 9 <space> ",
-			"pattern": ":https://appp8tlckwa5126.h5.xiaoeknow.com/"
-		},
-		{
-			"passKeys": "1 2 3 ",
-			"pattern": ":https://www.ysgc.vip/"
-		},
-		{
-			"passKeys": "3 ",
-			"pattern": "^https?://www\\.kingpound\\.com/"
-		},
-		{
-			"passKeys": "+ - . 0 1 2 3 4 5 6 7 8 9 <space> [ ] c x z ",
-			"pattern": ":https://www.twitch.tv/"
-		},
-		{
-			"passKeys": "R r ",
-			"pattern": ":https://chat.openai.com/"
-		},
-		{
-			"passKeys": "1 2 3 ",
+			"passKeys": "u ",
 			"pattern": ":https://live.bilibili.com/"
 		},
 		{
-			"passKeys": "<space> ",
-			"pattern": ":https://www.olevod.com/"
-		},
-		{
-			"passKeys": "1 2 3 4 6 <space> ",
+			"passKeys": "<space> C Z c z ",
 			"pattern": ":https://www.youtube.com/"
 		},
 		{
-			"passKeys": "",
-			"pattern": ":https://asciiflow.com/"
-		},
-		{
-			"passKeys": "+ - . <space> [ ] c z ",
+			"passKeys": "+ - . <space> C Z [ ] c z ",
 			"pattern": ":https://www.bilibili.com/"
 		}
 	],
@@ -75,13 +47,10 @@
 		"# https://github.com/gdh1995/vimium-c/wiki/Map-a-key-to-different-commands-on-different-websites",
 		"env vac  host=\"https://www.vocabulary.com\"",
 		"env bili host=\"https://www.bilibili.com/\"",
+		"",
+		"mapkey u <space>",
 		"map <s-space> runKey expect=\"bili:<v-fh1>;vac:<v-fh2>\" keys=\"<v-fd>\"",
 		"map <v-fh1> openUrl url=\"javascript:document.querySelector(\\\".bpx-player-ctrl-play\\\").click()\" #b站播放",
-		"map <v-fh2> openUrl url=\"javascript:document.querySelector(\\\".audio\\\").click()\" #播放音频vacbory",
-		"",
-		"# mapKey u",
-		"map u runKey expect=\"bili:<v-ubili>;vac:<v-u2>\" keys=\"<v-fd>\"",
-		"map <v-ubili> openUrl url=\"javascript:document.querySelector(\\\".bpx-player-ctrl-btn.bpx-player-ctrl-full\\\").click()\" #b站播放",
 		"",
 		"",
 		"# ----------------------------------------暂停快捷键",
@@ -147,7 +116,7 @@
 		"",
 		"map <space><tab> visitPreviousTab        # 同^,上个访问的标签",
 		"# map ; visitPreviousTab                   # 同上,同^",
-		"map z visitPreviousTab                   # 同上,同^",
+		"# map z visitPreviousTab                   # 同上,同^",
 		"                                         # swap改小写为默认全局",
 		"map m Marks.activateCreate swap          # m标记",
 		"map ` Marks.activate swap                # `跳转",

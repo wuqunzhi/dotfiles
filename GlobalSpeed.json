@@ -257,21 +257,6 @@
 			"command": "setPause",
 			"enabled": true,
 			"greedy": true,
-			"id": "8027136423",
-			"key": {
-				"altKey": false,
-				"code": "Semicolon",
-				"ctrlKey": false,
-				"metaKey": false,
-				"shiftKey": false
-			},
-			"spacing": 0,
-			"valueState": "toggle"
-		},
-		{
-			"command": "setPause",
-			"enabled": true,
-			"greedy": true,
 			"id": "7724298972",
 			"key": {
 				"altKey": false,
@@ -524,6 +509,33 @@
 				"shiftKey": false
 			},
 			"valueNumber": -1
+		},
+		{
+			"id": "6716096770",
+			"command": "setPause",
+			"enabled": true,
+			"greedy": true,
+			"valueState": "toggle",
+			"key": {
+				"ctrlKey": false,
+				"altKey": false,
+				"shiftKey": false,
+				"metaKey": false,
+				"code": "Space"
+			}
+		},
+		{
+			"id": "2138934303",
+			"command": "fullscreen",
+			"enabled": true,
+			"greedy": true,
+			"key": {
+				"ctrlKey": false,
+				"altKey": false,
+				"shiftKey": false,
+				"metaKey": false,
+				"code": "Semicolon"
+			}
 		}
 	],
 	"keybindsUrlCondition": null,

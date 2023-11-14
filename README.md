@@ -4,6 +4,7 @@
 
 ## nvim
 暂时不用
+## nvim(lazyvim)
 
 ## vscode
 > C:/Users/79481/AppData/Roaming/Code/User
@@ -30,4 +31,6 @@
 vim $PROFILE
 . $PROFILE
 ```
+
+## potplayer
 

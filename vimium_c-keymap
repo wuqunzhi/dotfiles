@@ -1,4 +1,3 @@
-# 2023-11-01
 map <space><space><space> showHelp # 同?
 
 # 数字键用的少,全局禁用了,留给GlobalSpeed
@@ -19,13 +18,10 @@ unmap 0
 # https://github.com/gdh1995/vimium-c/wiki/Map-a-key-to-different-commands-on-different-websites
 env vac  host="https://www.vocabulary.com"
 env bili host="https://www.bilibili.com/"
+
+mapkey u <space>
 map <s-space> runKey expect="bili:<v-fh1>;vac:<v-fh2>" keys="<v-fd>"
 map <v-fh1> openUrl url="javascript:document.querySelector(\".bpx-player-ctrl-play\").click()" #b站播放
-map <v-fh2> openUrl url="javascript:document.querySelector(\".audio\").click()" #播放音频vacbory
-
-# mapKey u
-map u runKey expect="bili:<v-ubili>;vac:<v-u2>" keys="<v-fd>"
-map <v-ubili> openUrl url="javascript:document.querySelector(\".bpx-player-ctrl-btn.bpx-player-ctrl-full\").click()" #b站播放
 
 
 # ----------------------------------------暂停快捷键
@@ -91,7 +87,7 @@ map gW goToRoot                          # 去到网站首页
 
 map <space><tab> visitPreviousTab        # 同^,上个访问的标签
 # map ; visitPreviousTab                   # 同上,同^
-map z visitPreviousTab                   # 同上,同^
+# map z visitPreviousTab                   # 同上,同^
                                          # swap改小写为默认全局
 map m Marks.activateCreate swap          # m标记
 map ` Marks.activate swap                # `跳转

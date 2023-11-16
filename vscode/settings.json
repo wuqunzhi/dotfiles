@@ -591,6 +591,7 @@
 	"ahk++.file.interpreterPathV2": "D:/AutoHotKey/v2/AutoHotkey64.exe",
 	"ahk++.file.interpreterPathV1": "D:/AutoHotKey/v2/AutoHotkey64.exe",
 	"ahk++.file.helpPathV2": "D:/AutoHotKey/v2/AutoHotkey.chm",
-	"windicss.enableColorDecorators": true
+	"windicss.enableColorDecorators": true,
+	"terminal.integrated.defaultProfile.windows": "Command Prompt"
 
 }

@@ -22,8 +22,7 @@
 " ie ae                                     //vim-textobj-entire
 " af                                        //visual mode select more
 " ys{motion}"  ds"   cs'"   v_S'"           //surround
-" s/S<char> <char> <operator>z/Z<char><char> // vim-sneak
-" gc gC                                     //vim-comment
+" s/S<char> <char> <operator>z/Z<char><char> // vim-sneak " gc gC                                     //vim-comment
 " nnoremap j gj
 " nnoremap k gk
 " -------------------- base --------------------
@@ -32,6 +31,7 @@
 " 2g;
 " :set nowrap
 nnoremap <space>ar R
+nnoremap <space>ab A{<CR>
 nnoremap <space>j J
 inoremap jk <ESC>
 inoremap jj <ESC>
@@ -50,8 +50,8 @@ noremap L $
 nnoremap Y ^y$
 nnoremap n nzz
 nnoremap N Nzz
-nnoremap <Leader>n :<C-u>nohlsearch<CR>
-" nnoremap <silent> <Leader>n :<C-u>nohlsearch<CR>
+nnoremap <Leader>n :nohlsearch<CR>
+" nnoremap <silent> <Leader>n :nohlsearch<CR>
 " vscodevim can't support g`
 
 " 省略i

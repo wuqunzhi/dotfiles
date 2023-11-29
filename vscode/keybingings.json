@@ -1,4 +1,3 @@
-// json不允许注释我把扩展名字改为jsonc
 [
 	// 2023-11-01
 	// s-space c-i suggestion
@@ -276,6 +275,12 @@
 		"command": "closeMarkersNavigation",
 		"when": "editorFocus && markersNavigationVisible"
 	},
+	// {
+	// 	"key": "ctrl+h",
+	// 	"command": "closeMarkersNavigation",
+	// 	// "when": "viewContainer.workbench.panel.markers.enabled"
+	// },
+
 	// referenceSearchVisible
 	{
 		"key": "ctrl+h",
